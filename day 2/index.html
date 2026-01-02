@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aavartan - Tech Fest</title>
+</head>
+<body>
+
+    <!-- Page Title -->
+    <h1>Aavartan – Central India's Largest Tech Fest</h1>
+
+    <!-- ========================= -->
+    <!-- Section 1: Event Schedule -->
+    <!-- ========================= -->
+    <h2>Event Schedule</h2>
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>10:00 AM – 12:00 PM</td>
+                <td>
+                    <strong>RoboWar</strong><br>
+                    Intense robot combat competition where teams battle with custom-built robots.
+                </td>
+                <td>Central Garden</td>
+            </tr>
+
+            <tr>
+                <td>1:00 PM – 3:00 PM</td>
+                <td>
+                    <strong>Vigyaan</strong><br>
+                    Exhibition of innovative science and technology projects by students.
+                </td>
+                <td>In front of Main Building</td>
+            </tr>
+
+            <tr>
+                <td>4:00 PM – 6:00 PM</td>
+                <td>
+                    <strong>Drone Racing</strong><br>
+                    High-speed drone racing challenge testing precision and control.
+                </td>
+                <td>Football Ground</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- =========================== -->
+    <!-- Section 2: Registration Form -->
+    <!-- =========================== -->
+    <h2>Event Registration Form</h2>
+
+    <form action="submit.html" method="post">
+
+        <!-- Name -->
+        <p>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required>
+        </p>
+
+        <!-- Email -->
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <!-- Age -->
+        <p>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="15" max="60">
+        </p>
+
+        <!-- Date -->
+        <p>
+            <label for="date">Date of Participation:</label><br>
+            <input type="date" id="date" name="date">
+        </p>
+
+        <!-- Radio Buttons -->
+        <p>
+            <strong>Ticket Type:</strong><br>
+            <input type="radio" id="basic" name="ticket" value="Basic">
+            <label for="basic">Basic</label><br>
+
+            <input type="radio" id="standard" name="ticket" value="Standard">
+            <label for="standard">Standard</label><br>
+
+            <input type="radio" id="vip" name="ticket" value="VIP">
+            <label for="vip">VIP</label>
+        </p>
+
+        <!-- Checkboxes -->
+        <p>
+            <strong>Workshop Preferences:</strong><br>
+            <input type="checkbox" id="robotics" name="workshop" value="Robotics">
+            <label for="robotics">Robotics</label><br>
+
+            <input type="checkbox" id="ai" name="workshop" value="AI">
+            <label for="ai">Artificial Intelligence</label><br>
+
+            <input type="checkbox" id="drones" name="workshop" value="Drones">
+            <label for="drones">Drone Technology</label>
+        </p>
+
+        <!-- Textarea -->
+        <p>
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+        </p>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
